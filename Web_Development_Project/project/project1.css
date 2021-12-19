@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display: flex;
+    align-items:center;
+    position: relative;
+    top:0px;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 56px; 
+    margin:5px 6px;
+}
+
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content:"";
+    position: absolute;
+    background-color:black;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    cursor:pointer;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color:black;
+}
+#navbar input{
+    border:2px solid black;
+    border-radius:4px;
+    padding: 3px;
+}
+a{
+    text-decoration: none;
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2016/05/03/16/15/gold-1369453__340.jpg') no-repeat center center/cover;
+    height:602px;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color:white;
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+}
+#home p{
+    color:white;
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+#collections1{
+      margin:34px;
+      display:flex;
+}
+#collections1 .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 28px;
+    background-color: #fcf7f7;
+}
+#collections1 .box img{
+    height: 160px;
+    margin:auto;
+    display:block;
+}
+#collections1 .box p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#service{
+    margin-bottom: 40px;
+    font-size: 23px;
+}
+#client-section{
+    position:relative;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('https://media.istockphoto.com/photos/social-media-concept-picture-id1224524622?b=1&k=20&m=1224524622&s=170667a&w=0&h=Mn7qIPjCTxQ7ujuWaacoOvivm080XFKlkILoDHpzxSw=') no-repeat center center/cover;
+    width: 100%;
+    height: 94%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+
+}
+#clients img{
+    height: 124px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-nox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contact-box form{
+    width:40%;
+}
+footer{
+    background: black;
+    color:white;
+    padding: 9px 20px;
+
+}
+.h-primary {
+    font-size: 3.8rem;
+    padding: 20px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px; 
+}
+.read{
+    padding: 25px 25px;
+    border: 2px solid black;
+    color:white;
+    background-color: brown;
+    border-radius: 10px;
+    cursor: pointer;
+    margin:auto;
+    display: block;
+    margin-top: 40px;
+}
+.read:hover{
+    background-color: hotpink;
+}
+.btn{
+    padding: 10px 20px;
+    border:2px solid black;
+    border-radius: 10px;
+    color:white;
+    background-color:brown;
+    margin:17px;
+    font-size: 1.5rem;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color:goldenrod;
+}
+.bt1{
+    cursor:pointer;
+    background-color: brown;
+    padding:3px 6px;
+    border-radius: 10px;  
+    color:white;
+    border: 2px solid black; 
+}
+.bt1:hover{
+    background-color:goldenrod;
+}
+.center{
+    text-align: center;
+}
